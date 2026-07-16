@@ -1,0 +1,73 @@
+/*
+  Fuente única de verdad para theming: colores, tipografía, espaciado, radios,
+  sombras y transiciones. Dark es el tema por defecto; [data-theme="light"]
+  es la alternativa clara, activada mediante theme-toggle.js.
+
+  Breakpoints de referencia usados en el resto de los archivos CSS
+  (custom properties no funcionan dentro de @media, se documentan aquí):
+    sm: 640px   md: 768px   lg: 1024px   xl: 1280px
+*/
+
+:root {
+  color-scheme: dark;
+
+  /* Color — dark (default) */
+  --color-bg: #0a0e14;
+  --color-surface: #111823;
+  --color-surface-alt: #161f2e;
+  --color-border: #232f3f;
+  --color-text-primary: #e6edf3;
+  --color-text-secondary: #8b98a9;
+  --color-accent: #5eead4;
+  --color-accent-hover: #8ff2e4;
+  --color-accent-rgb: 94, 234, 212;
+  --color-focus-ring: #5eead4;
+
+  /* Tipografía */
+  --font-heading: 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+
+  /* Escala de espaciado (base 8px) */
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+  --space-7: 4rem;
+  --space-8: 5rem;
+  --space-9: 6rem;
+  --space-section: clamp(4rem, 10vw, 8rem);
+
+  /* Radios y sombras */
+  --radius-sm: 6px;
+  --radius-lg: 20px;
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+  /* Layout */
+  --container-max: 1200px;
+  --nav-height: 72px;
+
+  /* Transiciones */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}
+
+/* Tema claro, activado vía [data-theme="light"] en <html> */
+[data-theme='light'] {
+  color-scheme: light;
+
+  --color-bg: #f7f9fb;
+  --color-surface: #ffffff;
+  --color-surface-alt: #eef2f6;
+  --color-border: #dde3ea;
+  --color-text-primary: #10151c;
+  --color-text-secondary: #4b5a6a;
+  --color-accent: #0d9488;
+  --color-accent-hover: #0f766e;
+  --color-accent-rgb: 13, 148, 136;
+  --color-focus-ring: #0d9488;
+
+  --shadow-md: 0 8px 24px rgba(16, 21, 28, 0.1);
+}

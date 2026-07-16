@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mauricio Ochoa — Desarrollador Full Stack</title>
+  <meta name="description" content="Portafolio de Mauricio Ochoa, desarrollador Full Stack con ~10 años de experiencia construyendo aplicaciones web empresariales con Angular, NestJS y .NET.">
+  <meta name="author" content="Mauricio Ochoa">
+  <link rel="canonical" href="https://MrTraner.github.io/Portafolio/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mauricio Ochoa — Desarrollador Full Stack">
+  <meta property="og:description" content="Portafolio de Mauricio Ochoa, desarrollador Full Stack con ~10 años de experiencia construyendo aplicaciones web empresariales con Angular, NestJS y .NET.">
+  <meta property="og:url" content="https://MrTraner.github.io/Portafolio/">
+  <meta property="og:image" content="https://MrTraner.github.io/Portafolio/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mauricio Ochoa — Desarrollador Full Stack">
+  <meta name="twitter:description" content="Portafolio de Mauricio Ochoa, desarrollador Full Stack con ~10 años de experiencia construyendo aplicaciones web empresariales con Angular, NestJS y .NET.">
+  <meta name="twitter:image" content="https://MrTraner.github.io/Portafolio/assets/img/og-image.jpg">
+
+  <!-- Favicon: SVG moderno, funciona en la mayoría de navegadores actuales -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="mauricio.dev" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Mauricio Ochoa",
+        "jobTitle": "Desarrollador Full Stack",
+        "description": "Desarrollador Full Stack con ~10 años de experiencia construyendo aplicaciones web empresariales con Angular, NestJS y .NET.",
+        "email": "hola@juanmauricio.com",
+        "url": "https://MrTraner.github.io/Portafolio/",
+        "sameAs": [
+          "https://github.com/MrTraner",
+          "https://www.linkedin.com/in/juan-mauricio-o-486314124/"
+        ],
+        "knowsAbout": ["Angular", "TypeScript", "C#", ".NET", "NestJS", "SQL Server", "Entity Framework", "Docker", "Kubernetes", "Azure"]
+      },
+      {
+        "@type": "WebSite",
+        "name": "Mauricio Ochoa — Portafolio",
+        "description": "Portafolio de Mauricio Ochoa, desarrollador Full Stack con ~10 años de experiencia construyendo aplicaciones web empresariales con Angular, NestJS y .NET.",
+        "url": "https://MrTraner.github.io/Portafolio/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#inicio" class="nav-brand">mauricio<span>.dev</span></a>
+
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+        <a class="nav-link" href="#skills">Stack</a>
+        <a class="nav-link" href="#proyectos">Proyectos</a>
+        <a class="nav-link" href="#experiencia">Experiencia</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar entre tema oscuro y claro">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <a class="btn btn-primary nav-cta" href="#contacto">Contactar</a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-label="Abrir menú de navegación" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+  </header>
+
+  <nav class="nav-mobile-menu" data-nav-menu aria-label="Navegación móvil">
+    <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+    <a class="nav-link" href="#skills">Stack</a>
+    <a class="nav-link" href="#proyectos">Proyectos</a>
+    <a class="nav-link" href="#experiencia">Experiencia</a>
+    <a class="nav-link" href="#contacto">Contacto</a>
+  </nav>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="inicio" class="section hero container">
+      <div class="reveal">
+        <p class="hero-eyebrow">Hola, soy</p>
+        <h1 class="hero-title">Mauricio Ochoa</h1>
+        <p class="hero-lede">
+          Desarrollador Full Stack. Construyo aplicaciones web empresariales de extremo a
+          extremo, del frontend en Angular a las APIs en .NET que las sostienen.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn-secondary" href="#contacto">Contactar</a>
+        </div>
+        <ul class="hero-meta">
+          <li>~10 años de experiencia</li>
+          <li>Enfoque en Angular + .NET</li>
+        </ul>
+      </div>
+      <div class="hero-graphic reveal" aria-hidden="true"></div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section container reveal">
+      <div class="section-head">
+        <span class="section-eyebrow">01 · Sobre mí</span>
+        <h2>Quién soy y qué hago</h2>
+      </div>
+      <div class="about-body">
+        <p>
+          Desarrollador Full Stack con cerca de 10 años de experiencia en desarrollo de
+          software. Desde 2018 me he especializado en construir aplicaciones web
+          empresariales, actualmente enfocado en el ecosistema Angular + .NET.
+        </p>
+        <p>
+          Formo parte del equipo tecnológico en el sector de seguros, donde trabajo a lo largo de
+          todo el stack: frontend en Angular con Tailwind CSS, una capa BFF en NestJS entre el
+          frontend y las APIs, y backend en .NET con Entity Framework sobre SQL Server. Cada
+          cambio va acompañado de pruebas unitarias (Jest en web y BFF, MSTest en las APIs) y se
+          despliega vía pipelines de Jenkins hacia AKS y servidores on-prem con IIS.
+        </p>
+        <p>
+          Los proyectos en los que trabajo siguen principios de Clean Architecture, Screaming
+          Architecture y Vertical Slice Architecture — el código se organiza por funcionalidad de
+          negocio, no por capas técnicas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Stack tecnológico -->
+    <section id="skills" class="section section-alt reveal">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">02 · Stack</span>
+          <h2>Tecnologías con las que trabajo</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Frontend</h3>
+            <div class="skill-tags">
+              <span class="tag">Angular</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Tailwind CSS</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Backend &amp; BFF</h3>
+            <div class="skill-tags">
+              <span class="tag">C# / .NET</span>
+              <span class="tag">Entity Framework</span>
+              <span class="tag">NestJS</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Bases de datos</h3>
+            <div class="skill-tags">
+              <span class="tag">SQL Server</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Testing</h3>
+            <div class="skill-tags">
+              <span class="tag">Jest</span>
+              <span class="tag">MSTest</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Herramientas, DevOps &amp; Cloud</h3>
+            <div class="skill-tags">
+              <span class="tag">Git</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Jenkins</span>
+              <span class="tag">Azure</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="section container reveal">
+      <div class="section-head">
+        <span class="section-eyebrow">03 · Proyectos</span>
+        <h2>Proyectos destacados</h2>
+        <p class="section-desc">Una selección de proyectos en los que he trabajado a lo largo de mi carrera.</p>
+      </div>
+      <div class="grid-auto">
+        <article class="card project-card">
+          <div class="project-gallery" data-gallery>
+            <div class="gallery-track">
+              <img class="project-thumb" src="assets/img/projects/project-3-1.png" alt="Captura de la app Random Cat mostrando un gatito" loading="lazy" width="1080" height="2220">
+              <img class="project-thumb" src="assets/img/projects/project-3-2.png" alt="Captura de la app Random Cat mostrando otro gatito" loading="lazy" width="1080" height="2220">
+              <img class="project-thumb" src="assets/img/projects/project-3-3.png" alt="Captura de la app Random Cat mostrando la opción de compartir" loading="lazy" width="1080" height="2220">
+            </div>
+            <button class="gallery-nav gallery-prev" type="button" data-gallery-prev aria-label="Imagen anterior">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="gallery-nav gallery-next" type="button" data-gallery-next aria-label="Imagen siguiente">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+            <div class="gallery-dots" data-gallery-dots></div>
+          </div>
+          <div class="project-body">
+            <h3>Random Cat</h3>
+            <p class="project-desc">
+              Proyecto personal de una aplicación móvil usando Kotlin y una API REST.
+              La app carga imágenes aleatorias de gatitos que puedes guardar en el celular o compartir en otras apps.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Kotlin</span>
+            </div>
+            <p class="project-year">2021</p>
+            <div class="project-links">
+              <a href="https://play.google.com/store/apps/details?id=com.mrtraner.randomcat" target="_blank" rel="noopener">Descargar →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-gallery" data-gallery>
+            <div class="gallery-track">
+              <img class="project-thumb" src="assets/img/projects/project-2-1.png" alt="Pantalla de bienvenida de la app UTSCAPP" loading="lazy" width="1080" height="1920">
+              <img class="project-thumb" src="assets/img/projects/project-2-2.png" alt="Menú principal de la app UTSCAPP con búsqueda de horarios y mapa de la universidad" loading="lazy" width="1080" height="1920">
+              <img class="project-thumb" src="assets/img/projects/project-2-3.png" alt="Pantalla de la app UTSCAPP con el horario de un grupo" loading="lazy" width="1080" height="1920">
+              <img class="project-thumb" src="assets/img/projects/project-2-4.png" alt="Pantalla de la app UTSCAPP con la información del salón y edificio" loading="lazy" width="1080" height="1920">
+            </div>
+            <button class="gallery-nav gallery-prev" type="button" data-gallery-prev aria-label="Imagen anterior">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="gallery-nav gallery-next" type="button" data-gallery-next aria-label="Imagen siguiente">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+            <div class="gallery-dots" data-gallery-dots></div>
+          </div>
+          <div class="project-body">
+            <h3>UTSCAPP</h3>
+            <p class="project-desc">
+              Aplicación móvil para la Universidad Tecnológica de Santa Catarina que
+              muestra el horario de alumnos y profesores, da acceso al sitio de
+              calificaciones y un mini mapa de las aulas de la institución. Desarrollada
+              con Xamarin Forms y un servicio web en PHP.
+            </p>
+            <div class="project-tags">
+              <span class="tag">C#</span>
+              <span class="tag">Xamarin Forms</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <p class="project-year">2017</p>
+          </div>
+        </article>
+
+        <article class="card project-card">
+          <div class="project-gallery" data-gallery>
+            <div class="gallery-track">
+              <img class="project-thumb" src="assets/img/projects/project-1-1.png" alt="Pantalla de bienvenida del traductor de lengua de señas mexicana con Kinect" loading="lazy" width="726" height="401">
+              <img class="project-thumb" src="assets/img/projects/project-1-2.png" alt="Editor de gestos en Visual Gesture Builder usado para entrenar el traductor de lengua de señas" loading="lazy" width="869" height="668">
+              <img class="project-thumb" src="assets/img/projects/project-1-3.png" alt="Demostración del traductor de lengua de señas en una presentación de proyectos" loading="lazy" width="1376" height="770">
+            </div>
+            <button class="gallery-nav gallery-prev" type="button" data-gallery-prev aria-label="Imagen anterior">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="gallery-nav gallery-next" type="button" data-gallery-next aria-label="Imagen siguiente">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+            <div class="gallery-dots" data-gallery-dots></div>
+          </div>
+          <div class="project-body">
+            <h3>Traductor de LSM con Kinect</h3>
+            <p class="project-desc">
+              El proyecto consistía en un software para detectar el movimiento de las
+              manos por medio del dispositivo Kinect y asociarles un significado en texto
+              y voz. Fue desarrollado con WPF, C# y Kinect SDK.
+            </p>
+            <div class="project-tags">
+              <span class="tag">C#</span>
+              <span class="tag">WPF</span>
+              <span class="tag">Kinect SDK</span>
+              <span class="tag">Visual Gesture Builder</span>
+            </div>
+            <p class="project-year">2016</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="section section-alt reveal">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">04 · Experiencia</span>
+          <h2>Trayectoria profesional</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <p class="timeline-role">Desarrollador Full Stack</p>
+            <p class="timeline-meta">Sahuro | Ago. 2018 — Presente</p>
+            <ul class="timeline-list">
+              <li>Trabajo como consultor de Sahuro, asignado al equipo de siniestros de Chubb (sector seguros), participando en el ciclo completo, desde el análisis hasta el despliegue.</li>
+              <li>Desarrollo el frontend en Angular con Tailwind CSS, una capa BFF en NestJS y APIs en .NET con Entity Framework sobre SQL Server.</li>
+              <li>Aplico Clean Architecture, Screaming Architecture y Vertical Slice Architecture, y despliego mediante Jenkins hacia AKS y servidores on-premise con IIS.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-role">Profesor de asignatura</p>
+            <p class="timeline-meta">Universidad Tecnológica de Santa Catarina | Ene. 2017 — Dic. 2018</p>
+            <ul class="timeline-list">
+              <li>Impartí materias de tecnologías de la información enfocadas en desarrollo de software para estudiantes de nivel superior.</li>
+            </ul>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-role">Desarrollador Web</p>
+            <p class="timeline-meta">Universidad Tecnológica de Santa Catarina | Sep. 2014 — Dic. 2017</p>
+            <ul class="timeline-list">
+              <li>Desarrollé temas y plugins en PHP para la plataforma Moodle de la universidad.</li>
+              <li>Di mantenimiento y actualicé el frontend del sitio web institucional.</li>
+              <li>Participé en proyectos internos como el prototipo del traductor de lengua de señas y la app móvil de consulta de horarios (UTSCAPP) — ver Proyectos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section container reveal">
+      <div class="section-head">
+        <span class="section-eyebrow">05 · Contacto</span>
+        <h2>Hablemos</h2>
+        <p class="section-desc">Puedes escribirme por correo o encontrarme en GitHub y LinkedIn.</p>
+      </div>
+      <div class="contact-panel">
+        <a class="contact-email" href="mailto:hola@juanmauricio.com">hola@juanmauricio.com</a>
+        <nav class="contact-social" aria-label="Redes sociales">
+          <a href="https://github.com/MrTraner" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/juan-mauricio-o-486314124/" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span data-current-year>2026</span> Mauricio Ochoa. Hecho con HTML, CSS y JS puro.</p>
+      <nav class="footer-social" aria-label="Redes sociales en el pie de página">
+        <a href="https://github.com/MrTraner" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/juan-mauricio-o-486314124/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" data-back-to-top aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
